@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
-
 /**
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
  *
  * Return: no return.
  */
+
 void _is_zero(char *argv[])
 {
 	int i, isn1 = 1, isn2 = 1;
@@ -31,7 +31,6 @@ void _is_zero(char *argv[])
 	{
 		printf("0\n");
 		exit(0);
-
 	}
 }
 
@@ -42,6 +41,7 @@ void _is_zero(char *argv[])
  *
  * Return: pointer of a char array.
  */
+
 char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
@@ -50,7 +50,6 @@ char *_initialize_array(char *ar, int lar)
 		ar[i] = '0';
 	ar[lar] = '\0';
 	return (ar);
-
 }
 
 /**
@@ -61,6 +60,7 @@ char *_initialize_array(char *ar, int lar)
  *
  * Return: length of the number.
  */
+
 int _checknum(char *argv[], int n)
 {
 	int ln;
@@ -73,7 +73,6 @@ int _checknum(char *argv[], int n)
 		}
 
 	return (ln);
-
 }
 
 /**
@@ -126,5 +125,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%s\n", nout);
 	return (0);
-
 }
